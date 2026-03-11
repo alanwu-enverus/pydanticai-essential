@@ -5,12 +5,6 @@ from pydantic_ai import Agent
 from pydantic_ai.models.bedrock import BedrockConverseModel
 
 model = BedrockConverseModel('anthropic.claude-3-haiku-20240307-v1:0')
-    #     model = BedrockConverseModel('anthropic.claude-3-haiku-20240307-v1:0',
-    #                               provider= BedrockProvider(
-    #     region_name='us-east-1',
-    #     aws_access_key_id='ASIAYZBRV5VUTJ53GIRO',
-    #     aws_secret_access_key='uL41WXI73KYDDIGESDfAnJcO9aNeVRY6EX+JHtGk',
-    # ),)
 
 async def test_async_agent():
     agent = Agent(
